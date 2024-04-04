@@ -9,7 +9,7 @@ const Header = () => {
         <select name="categories" id="categories">
             {
                 categories.map((category,index) => (
-                    <option key={index} value={category}>{category}</option>
+                    <option className="category" key={index} value={category}>{category}</option>
                 ))
             }
         </select>

@@ -1,3 +1,10 @@
+
+
 @import "./SCSS/reset";
 @import "./SCSS/mixins";
-@import "./SCSS/variables"
+@import "./SCSS/variables";
+
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+}

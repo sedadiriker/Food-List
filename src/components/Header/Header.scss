@@ -1,25 +1,29 @@
 @import "../../SCSS/mixins";
+@import "../../SCSS/variables";
 header{
+    background-color: rgb(73, 70, 70);
     padding: 2rem 5rem;
-    border: 1px solid red;
+    margin: 1.5rem;
     text-align: center;
     @include flex(space-between,end,1rem);
     h1{
         text-transform: uppercase;
+        font-family: $title-font;
+        color: white;
+        text-shadow: 1px 2px 10px black;
     }
 }
 
-// .categories{
-//     display: flex;
-//     justify-content: center;
-//     gap: 1.5rem;
-//     flex-wrap: wrap;
-//     .category{
-//         cursor: pointer;
-//         background-color: black;
-//         color: white;
-//         width: 150px;
-//         padding: 5px 1rem;
-//         white-space: nowrap;
-//     }
-// }
+#categories{
+    width: 30%;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(78, 62, 62);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.category{
+    background-color: transparent;
+}
