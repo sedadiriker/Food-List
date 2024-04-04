@@ -1,0 +1,25 @@
+@import "../../SCSS/mixins";
+header{
+    padding: 2rem 5rem;
+    border: 1px solid red;
+    text-align: center;
+    @include flex(space-between,end,1rem);
+    h1{
+        text-transform: uppercase;
+    }
+}
+
+// .categories{
+//     display: flex;
+//     justify-content: center;
+//     gap: 1.5rem;
+//     flex-wrap: wrap;
+//     .category{
+//         cursor: pointer;
+//         background-color: black;
+//         color: white;
+//         width: 150px;
+//         padding: 5px 1rem;
+//         white-space: nowrap;
+//     }
+// }
