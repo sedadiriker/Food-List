@@ -1,13 +1,16 @@
 .food-lists{
+    text-align: center;
     padding: 2rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 1.5rem;
     .search{
         width: 50%;
         & input{
+            outline: none;
             padding: 10px;
             border-radius: 10px;
             background-color: rgb(195, 192, 192);
@@ -25,4 +28,12 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
+}
+@media screen and (max-width:780px) {
+    .food-lists{
+        padding: 1rem;
+        .search{
+            width: 70%;
+        }
+    }
 }

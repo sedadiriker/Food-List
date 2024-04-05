@@ -1,12 +1,13 @@
 import "./FoodCard.scss";
 import { useState } from "react";
 
-const FoodCard = ({ name, price, description, image }) => {
+const FoodCard = ({name, price, description, image }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleDescription = () => {
     setIsExpanded(!isExpanded);
   };
+
   return (
     <div className="food-card">
      
