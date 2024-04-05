@@ -9,6 +9,7 @@ const FoodCard = ({ name, price, description, image }) => {
   };
   return (
     <div className="food-card">
+     
       <div className="image">
         <img src={`./images/${image}`} alt={name} />
       </div>

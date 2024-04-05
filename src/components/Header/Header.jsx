@@ -7,6 +7,8 @@ const Header = () => {
       <h1>Flavors from World Cuisines</h1>
       <label htmlFor="categories"></label>
         <select name="categories" id="categories">
+        <option className="categories" value="" disabled selected>Categories</option>
+
             {
                 categories.map((category,index) => (
                     <option className="category" key={index} value={category}>{category}</option>

@@ -6,6 +6,9 @@
     @include flex(space-between,center,1rem);
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.148);
+    &:hover .image img{
+        opacity: 1;
+    }
 }
 .image{
     width: 45%;
@@ -17,6 +20,8 @@
         object-fit: cover;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
+        opacity: 0.5;
+        transition: all 1s;
     }
 }
 .food-info{
@@ -29,10 +34,14 @@
 .name{
     font-size: 1.5rem;
     font-weight: bold;
-    color: brown;
+    color: rgb(191, 49, 49);
 }
 .description{
     cursor: pointer;
 }
-  
+
+.price{
+    font-size: 1.5rem;
+    color: rgb(206, 169, 179);
+}
   
